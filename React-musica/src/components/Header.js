@@ -1,11 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Header = () => {
-  return (
-    <div>
-      <h1 className="header">Musica React</h1>
-    </div>
-  );
-};
+class Header extends React.Component {
+  render() {
+    return (
+      <Link to="/">
+        <h1 className="header">Musica React</h1>
+      </Link>
+    );
+  }
+}
 
 export default Header;
